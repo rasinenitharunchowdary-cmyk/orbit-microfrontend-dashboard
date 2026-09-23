@@ -1,0 +1,6 @@
+{
+  "name": "@mfe/dashboard", "private": true, "version": "1.0.0", "type": "module",
+  "scripts": {"dev":"vite --host 0.0.0.0 --port 4175","build":"vite build","preview":"vite preview --host 0.0.0.0 --port 4175","typecheck":"tsc --noEmit"},
+  "dependencies": {"@mfe/platform":"1.0.0","@mfe/ui":"1.0.0","react":"^19.3.0","react-dom":"^19.3.0","react-router-dom":"^7.18.4","zustand":"^5.0.15"},
+  "devDependencies": {"@module-federation/vite":"^1.22.1","@vitejs/plugin-react":"^5.0.4","vite":"^8.3.0","typescript":"^5.9.2"}
+}

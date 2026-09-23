@@ -1,0 +1,10 @@
+{
+  "latestErrorEvent": {
+    "code": "TYPE-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"/Users/sriharireddy/.nvm/versions/node/v22.23.1/bin/node /Users/sriharireddy/Downloads/orbit-microfrontend-dashboard/node_modules/typescript/bin/tsc --project /Users/sriharireddy/Downloads/orbit-microfrontend-dashboard/apps/notifications/node_modules/.federation/tsconfig.c754413f08de81924873a63a29dae56a.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "args": {
+      "cmd": "/Users/sriharireddy/.nvm/versions/node/v22.23.1/bin/node /Users/sriharireddy/Downloads/orbit-microfrontend-dashboard/node_modules/typescript/bin/tsc --project /Users/sriharireddy/Downloads/orbit-microfrontend-dashboard/apps/notifications/node_modules/.federation/tsconfig.c754413f08de81924873a63a29dae56a.json"
+    },
+    "timestamp": 1790105958321
+  }
+}

@@ -1,0 +1,9 @@
+# Example shell deployment. In a real multi-site setup each remote is deployed
+# as its own Netlify/Vercel project with its own base directory.
+[build]
+  command = "npm run build -w @mfe/shell"
+  publish = "apps/shell/dist"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

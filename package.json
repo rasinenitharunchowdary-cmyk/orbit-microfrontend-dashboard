@@ -1,0 +1,31 @@
+{
+  "name": "orbit-microfrontend-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "api"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,auth,dashboard,users,analytics,notifications,shell \"npm run dev -w @mfe/api\" \"npm run dev -w @mfe/auth\" \"npm run dev -w @mfe/dashboard\" \"npm run dev -w @mfe/users\" \"npm run dev -w @mfe/analytics\" \"npm run dev -w @mfe/notifications\" \"npm run dev -w @mfe/shell\"",
+    "build": "npm run build -ws --if-present",
+    "typecheck": "npm run typecheck -ws --if-present",
+    "preview": "concurrently -k -n api,auth,dashboard,users,analytics,notifications,shell \"npm run start -w @mfe/api\" \"npm run preview -w @mfe/auth\" \"npm run preview -w @mfe/dashboard\" \"npm run preview -w @mfe/users\" \"npm run preview -w @mfe/analytics\" \"npm run preview -w @mfe/notifications\" \"npm run preview -w @mfe/shell\"",
+    "check": "npm run typecheck && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "concurrently": "^9.2.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "lucide-react": "^1.47.0"
+  }
+}
